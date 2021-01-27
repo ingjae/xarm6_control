@@ -10,7 +10,7 @@
 
   <!-- Setting TF -->
   <node pkg="tf" type="static_transform_publisher" name="realsense_tf" args="0.07 0.0 0.0 0.0 -1.5707 3.14 /link_eef /camera_link 100" />
-  <node pkg="tf" type="static_transform_publisher" name="marker_tf" args="-0.02 -0.087 0.0 1.57 0.0 3.14 /fiducial_100 /marker 100" />
+  <node pkg="tf" type="static_transform_publisher" name="marker_tf" args="-0.017 -0.0855 0.0 1.57 0.0 3.14 /fiducial_100 /marker 100" />
 
   <!-- common: bring up node to enable real xArm control -->
   <include file="$(find xarm_bringup)/launch/xarm6_server.launch">
